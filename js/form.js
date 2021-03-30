@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault(); 
 
       let error = formValidate(form);
-      let formData = new FormData(form);
+      let formData = new formData(form);
 
       if (error === 0) {
         form.classList.add('_sending');
@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
             error++;
           }
         }
-        return error;
       }
+      return error;
     }
 
     function formAddError(input) {
