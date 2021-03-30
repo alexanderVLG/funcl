@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault(); 
 
       let error = formValidate(form);
-      let formData = new formData(form);
+      //let formData = new formData(form);
 
       if (error === 0) {
         form.classList.add('_sending');
@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
           alert(result.message);
           form.reset();
           form.classList.remove('_sending');
-        } else {
+        }  else {
           alert('Ошибка');
           form.classList.remove('_sending');
-        }
+        } 
       } else {
         alert('Заполните обязательные поля');
       }
